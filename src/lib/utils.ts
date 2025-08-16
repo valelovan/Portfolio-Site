@@ -1,4 +1,4 @@
-import { ClassValue, clsx} from "clsx";
+import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 export const isMobile = () => {
@@ -8,5 +8,9 @@ export const isMobile = () => {
 };
 
 export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
+export function textFlip(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }

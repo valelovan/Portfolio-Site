@@ -4,6 +4,7 @@ import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
 import { Products } from "@/components/Products";
 import { Metadata } from "next";
+import { Cover } from "@/components/ui/cover";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -15,10 +16,9 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <Container>
-      <span className="text-4xl">⚡</span>
       <Heading className="font-black mb-10">
         {" "}
-        What I&apos;ve been working on
+        What I&apos;ve been <Cover>building</Cover>
       </Heading>
 
       <Products />
