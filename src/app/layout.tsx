@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe - Developer",
+  title: "Vale Lovan - CS Grad",
   description:
-    "John Doe is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Vale Lovan is a recent CS graduate looking to start his career in tech.",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <Sidebar />
         <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
-          <div className="flex-1 bg-white min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
+          <div className="flex-1 bg-white dark:bg-black min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
             {children}
             <Footer />
           </div>
